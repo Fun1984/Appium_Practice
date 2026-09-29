@@ -15,7 +15,8 @@ export const config: WebdriverIO.Config = {
     
     maxInstances: 10,
     
-    capabilities: [{
+    capabilities: [
+    {
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
         // browserName: 'Chrome',
@@ -35,7 +36,9 @@ export const config: WebdriverIO.Config = {
     //     'appium:noReset': true
     // }
     ],
-    services: ['appium'],
+    // services: ['appium'],
+    hostname: '127.0.0.1', 
+    port: 4723,
     logLevel: 'info',
     
     bail: 0,
