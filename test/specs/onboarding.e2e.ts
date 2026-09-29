@@ -5,7 +5,7 @@ describe('온보딩 테스트', () => {
     it('성별과 이름 넣기', async () => {
         
         await onboardingPage.setName('오토봇')
-        await onboardingPage.selectGender(onboardingLoc.female)
+        await onboardingPage.selectGenderV2(onboardingLoc.female)
 
     })
 })
