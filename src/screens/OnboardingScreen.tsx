@@ -52,7 +52,7 @@ const OnboardingScreen = ({ navigation }: any) => {
       style={styles.container}
     >
       <View>
-          <Text style={styles.title}>일기 어플</Text>
+          <Text testID='title' style={styles.title}>일기 어플</Text>
           {/* 프로필 사진 */}
           <View style={styles.profileContainer}>
 
@@ -91,6 +91,7 @@ const OnboardingScreen = ({ navigation }: any) => {
 
           {/* 저장 버튼 */}
           <TouchableOpacity
+            testID="save"
             style={[styles.submitButton, !isFormComplete && styles.submitButtonDisabled]}
             onPress={handleSubmit}
             disabled={!isFormComplete}

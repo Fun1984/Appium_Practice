@@ -5,6 +5,11 @@ function withPlatform(ios: string, android: string) {
 function getByText(text: string) {
     return withPlatform(`//*[@name="${text}"]`, `//*[@content-desc="${text}"]`)
 }
+function getByTextV2(text: string) {
+    return withPlatform(`//*[@name="${text}"]`, `//*[@text="${text}"]`)
+}
+
+
 
 function getById(id: string) {
     return withPlatform(`/~${id}]`, `//*[@resource-id="${id}"]`)
@@ -12,5 +17,6 @@ function getById(id: string) {
 
 export const selectors = {
     getByText,
-    getById
+    getById,
+    getByTextV2
 }

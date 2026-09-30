@@ -24,7 +24,7 @@ export const config: WebdriverIO.Config = {
         'appium:platformVersion': '16.0',
         'appium:automationName': 'UiAutomator2',
         'appium:app': path.resolve('./android/app/build/outputs/apk/debug/diary.apk'),
-        'appium:noReset': true
+        'appium:noReset': true //테스트 과정에서는 비사용 추천하는 부분
     },
     // 여기는 사실 iOS가 없음으로 생략해도 됨(CLASS 101 강의 재첨강 필요)
     // { 
@@ -39,7 +39,8 @@ export const config: WebdriverIO.Config = {
     // services: ['appium'],
     hostname: '127.0.0.1', 
     port: 4723,
-    logLevel: 'info',
+    // logLevel: 'info', //모든 정보
+    logLevel: 'error', //에러 발생 시에만
     
     bail: 0,
     

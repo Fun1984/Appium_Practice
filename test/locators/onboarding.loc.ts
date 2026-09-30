@@ -2,7 +2,7 @@
 
 export default {
     appTitle: '일기 어플',
-    phtoh: 'image',
+    photo: 'image',
     photoBtn: '사진 선택',
     name: '이름',
     nameTitle: 'name_title', //testID
@@ -12,5 +12,5 @@ export default {
     gender: '성별',
     female: '여자',
     male: '남자',
-    save: '저장'
+    save: 'save'
 }
